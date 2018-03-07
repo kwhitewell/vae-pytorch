@@ -19,11 +19,11 @@ To train models, including an encoder and a decoder, run
 
      $ python train.py
 
-Also you can specify some arguments (i.e. ``-g'' for training with GPU if you have it).
+Also you can specify some arguments (i.e. ``-g`` for training with GPU if you have it).
 
 ## Test
 After the training, you can draw some samples with trained decoder by running
 
      $ python visualizer.py -m trained -n 100
 
-where an argument ``-m'' specifies the location of trained model and ``-n'' also specifies the number of samples to draw.
+where an argument ``-m`` specifies the location of trained model and ``-n`` also specifies the number of samples to draw.
