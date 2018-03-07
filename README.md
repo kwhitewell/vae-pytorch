@@ -3,7 +3,7 @@ This is an implementation of Variational auto-encoder (VAE) based on the origina
 
 [1] https://arxiv.org/pdf/1312.6114.pdf
 
-## installation
+## Installation
 This requires the following packages:
 
  - Python 3.6.5 or later
@@ -14,14 +14,14 @@ This requires the following packages:
 
 In my environment, I installed pytorch via pip.
 
-## train
+## Train
 To train models, including an encoder and a decoder, run
 
      $ python train.py
 
 Also you can specify some arguments (i.e. ``-g'' for training with GPU if you have it).
 
-## test
+## Test
 After the training, you can draw some samples with trained decoder by running
 
      $ python visualizer.py -m trained -n 100
