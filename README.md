@@ -6,11 +6,11 @@ This is an implementation of Variational auto-encoder (VAE) based on the origina
 ## Installation
 This requires the following packages:
 
- - Python 3.6.5 or later
- - torch 0.3.1
- - torchvision 0.2.0
- - numpy 1.14.1
- - typing 3.6.2
+ - Python (3.6.5 or later)
+ - torch (0.3.1)
+ - torchvision (0.2.0)
+ - numpy (1.14.1)
+ - typing (3.6.2)
 
 In my environment, I installed pytorch via pip.
 
