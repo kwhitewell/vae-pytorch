@@ -18,7 +18,7 @@ def kl_divergence(
 ) -> Variable:
   return torch.sum(
     1 + torch.log(var.pow(2)) - mu.pow(2) - var.pow(2),
-    dim=1
+    dim=1,
   ) / 2
 
 
@@ -65,7 +65,6 @@ def train(
 
     kl = torch.sum(kl_divergence(mu, var)) / (batch_size * encoder.n_in)
     mse = F.mse_loss(x_bar, x, size_average=True)
-    #mse = F.binary_cross_entropy(x_bar, x, size_average=True)
 
     loss = -kl + mse
 
@@ -152,6 +151,7 @@ def main():
       args.guid,
     )
 
+    # save parameters
     torch.save(
       encoder,
       "{}/encoder_epoch_{}".format(save_dir, epoch),
